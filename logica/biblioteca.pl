@@ -6,9 +6,7 @@
 % Responsavel: Gabriel
 % ==========================================================
 
-% ==========================================================
 % 1. BASE DE CONHECIMENTO - FATOS
-% ==========================================================
 
 % livro(Codigo, Titulo, Autor, Categoria).
 
@@ -34,10 +32,7 @@ emprestimo(e001, l004, a001).
 emprestimo(e002, l003, a002).
 emprestimo(e003, l005, p001).
 
-
-% ==========================================================
 % 2. REGRAS LOGICAS
-% ==========================================================
 
 % REGRA 1
 % Um livro esta disponivel quando existe no acervo
@@ -108,9 +103,7 @@ aluno_com_emprestimo(Nome) :-
     leitor_com_emprestimo(CodigoLeitor).
 
 
-% ==========================================================
 % 3. CONSULTAS PARA TESTES
-% ==========================================================
 
 % Execute cada consulta separadamente no SWI-Prolog.
 %

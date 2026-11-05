@@ -1,9 +1,6 @@
 from typing import NamedTuple, Tuple
 
-
-# ==========================================================
 # ESTRUTURA IMUTÁVEL DE DADOS
-# ==========================================================
 
 class Livro(NamedTuple):
     codigo: str
@@ -12,10 +9,7 @@ class Livro(NamedTuple):
     categoria: str
     disponivel: bool
 
-
-# ==========================================================
 # FUNÇÕES FUNCIONAIS
-# ==========================================================
 
 def filtrar_livros_disponiveis(
     livros: Tuple[Livro, ...],
@@ -66,10 +60,7 @@ def buscar_livro_por_codigo(
 
     return encontrados[0] if encontrados else None
 
-
-# ==========================================================
 # DADOS DE EXEMPLO
-# ==========================================================
 
 acervo = (
     Livro(
@@ -102,10 +93,7 @@ acervo = (
     )
 )
 
-
-# ==========================================================
 # EXECUÇÃO E TESTES
-# ==========================================================
 
 if __name__ == "__main__":
 

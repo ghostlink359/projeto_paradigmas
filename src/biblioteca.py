@@ -1,10 +1,7 @@
 from abc import ABC, abstractmethod
 from datetime import date
 
-
-# ==========================================================
 # CLASSES DE DOMÍNIO
-# ==========================================================
 
 class Livro:
     def __init__(self, codigo, titulo, autor, categoria):
@@ -131,10 +128,7 @@ class Emprestimo:
         self._ativo = False
         self._data_devolucao = date.today()
 
-
-# ==========================================================
 # NOTIFICAÇÕES E POLIMORFISMO
-# ==========================================================
 
 class Notificador(ABC):
     @abstractmethod
@@ -154,10 +148,7 @@ class NotificadorLista(Notificador):
     def notificar(self, evento, mensagem):
         self.mensagens.append(f"[{evento}] {mensagem}")
 
-
-# ==========================================================
 # SISTEMA PRINCIPAL
-# ==========================================================
 
 class Biblioteca:
     def __init__(self, nome):
@@ -265,10 +256,7 @@ class Biblioteca:
 
         return emprestimo
 
-
-# ==========================================================
 # EXECUÇÃO DE EXEMPLO
-# ==========================================================
 
 if __name__ == "__main__":
     biblioteca = Biblioteca("Biblioteca Acadêmica")
